@@ -25,9 +25,11 @@ namespace asynclocal
 
             var context = accessor.FakeContext;
 
+            //currentContext == context应为true
             Console.WriteLine(currentContext == context);
 
-            Console.WriteLine(context == null);
+            //context != null应为true
+            Console.WriteLine(context != null);
 
             Console.ReadKey();
         }
